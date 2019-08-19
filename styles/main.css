@@ -1,0 +1,17 @@
+.section-head {
+    background-image: url(../images/section-head-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 55px 0;
+}
+
+.section-head p{
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+.section-head li{
+    font-size: 4em;
+}
