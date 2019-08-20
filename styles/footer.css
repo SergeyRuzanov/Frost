@@ -1,6 +1,6 @@
 .footer {
     background-color: #131313;
-    padding: 2em 0;
+    padding: 2rem 0;
 }
 
 .socials {
@@ -10,7 +10,7 @@
 }
 
 .socials-item {
-    margin: 0 1em;
+    margin: 0 1rem;
 }
 
 .socials-link {
@@ -28,7 +28,7 @@
 }
 
 .socials-text {
-    margin-left: 0.8em;
+    margin-left: 0.8rem;
 }
 
 .socials-text p:not(.phone-city) {
@@ -36,7 +36,7 @@
 }
 
 .phone-city {
-    margin: 0 0 0.3em 0;
+    margin: 0 0 0.3rem 0;
     color: #9a9a9a;
 }
 
