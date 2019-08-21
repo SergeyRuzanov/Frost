@@ -19,12 +19,20 @@
     color: #FFFFFF;
 }
 
-.socials-link:hover svg{
+.socials-link:hover:not(.socials-link-mail) svg{
     stroke: #6a6a6a;
+}
+
+.socials-link:hover svg circle:last-child {
+    fill: #6a6a6a;
 }
 
 .socials-link:hover p:not(.phone-city) {
     color: #6a6a6a;
+}
+
+.socials-link-mail:hover path {
+    fill: #6a6a6a;
 }
 
 .socials-text {

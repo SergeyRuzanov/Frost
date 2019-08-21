@@ -21,7 +21,7 @@ main {
 }
 
 main .container {
-    padding: 30px 0;
+    padding: 1.7rem 0;
 }
 
 .filters {
@@ -34,6 +34,7 @@ main .container {
     align-items: center;
     flex-wrap: wrap;
     align-content: flex-start;
+    margin-bottom: 1.7rem;
 }
 
 .filters label:not(:last-child) {
@@ -82,4 +83,138 @@ main .container {
     margin-right: 0.5rem;
     background-color: #F7F7F7;
     border: 1px solid #D3D3D3;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -25px;
+}
+
+.product {
+    padding: 1.3rem;
+    background-color: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    width: 350px;
+    overflow: auto;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-box {
+    display: flex;
+    margin-bottom: 1.5rem;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-image {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;
+}
+
+.product-name {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.product-bottom {
+    margin-top: auto;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 600;
+    float: left;
+}
+
+.product-buy {
+    background-color: #2156BD;
+    color: #FFFFFF;
+    padding: 0.5rem 2.8rem;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    float: right;
+    cursor: pointer;
+}
+
+.product-buy:hover {
+    background-color: #1C499F;
+}
+
+.product-buy:active {
+    background-color: #194292;
+}
+
+.pages {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pages-back, .pages-next, .pages-page {
+    background-color: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    color: #000000;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages-back:hover, .pages-next:hover, .pages-page:hover:not(.pages-this) {
+    background-color: #E5E5E5;
+}
+
+.pages-this {
+    background-color: #2156BD;
+    color: #FFFFFF;
+    border: none;
+}
+
+.pages-points {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 5px;
+    height: 35px;
+    width: 24px;
+}
+
+.pages-points, .pages-page {
+    margin-left: 5px;
+}
+
+.pages-back, .pages-next {
+    height: 35px;
+    width: 110px;
+}
+
+.pages-back {
+    margin-right: 10px;
+}
+
+.pages-next {
+    margin-left: 15px;
+}
+
+.pages-back svg {
+    margin-right: 9px;
+    margin-bottom: -2px;
+}
+
+.pages-next svg {
+    margin-left: 9px;
+    margin-bottom: -2px;
+}
+
+.pages-page{
+    height: 35px;
+    width: 35px;
 }
