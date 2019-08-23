@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/registration.css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="form-header">Создание учётной записи</div>
+        <form class="form-form" action="#" method="post">
+            <div class="form-name">
+                <input class="form-input-text form-input-text-error" type="text" name="firstname" id="firstname" placeholder="Имя">
+                <input class="form-input-text" type="text" name="surname" id="surname" placeholder="Фамилия">
+            </div>
+            <input class="form-input-text" type="email" name="mail" id="mail" placeholder="Адрес электронной почты">
+            <input class="form-input-text" type="password" name="firstpassword" id="firstpassword" placeholder="Пароль">
+            <input class="form-input-text" type="password" name="secondpassword" id="secondpassword"
+                placeholder="Повторите пароль">
+            <input class="form-submit" type="submit" value="Зарегистрироваться">
+            <a href="#" class="form-link">Войти в существующую учётную запись</a>
+        </form>
+    </div>
+
+    <div class="form">
+        <div class="form-header">Вход в учётную запись</div>
+        <form class="form-form" action="#" method="post">
+            <input class="form-input-text" type="email" name="mail" id="mail" placeholder="Адрес электронной почты">
+            <input class="form-input-text" type="password" name="firstpassword" id="firstpassword" placeholder="Пароль">
+            <a href="#" class="form-link-password">Забыли пароль?</a>
+            <input class="form-submit" type="submit" value="Войти">
+            <a href="#" class="form-link">Создать новую учётную запись</a>
+        </form>
+    </div>
+
+    <div class="form">
+        <div class="form-header">Восстановление пароля</div>
+        <div class="form-text">Для получения нового пароля необходимо вписать в поле ниже адрес электронной почты,
+            указанный при регистрации</div>
+        <form class="form-form" action="#" method="post">
+            <input class="form-input-text" type="email" name="mail" id="mail" placeholder="Адрес электронной почты">
+            <input class="form-submit" type="submit" value="Отправить подтверждение">
+            <a href="#" class="form-link">Создать новую учётную запись</a>
+        </form>
+    </div>
+</body>
+
+</html>

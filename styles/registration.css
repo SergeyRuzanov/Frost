@@ -1,0 +1,93 @@
+@import url(style.css);
+
+.form {
+    width: 600px;
+    height: 540px;
+    margin: 0 auto;
+    padding: 45px 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15); 
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px auto;
+}
+
+.form-header {
+    font-size: 1.875rem;
+    margin-bottom: 35px;
+}
+
+.form-text {
+    font-size: 1.125rem;
+    color: #989898;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.form-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-name .form-input-text {
+    width: 48%;
+}
+
+.form-input-text {
+    padding: 10px 20px;
+    background: #f6f6f6;
+    border: 1px solid #D3D3D3;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+.form-input-text-error {
+    border: 1.5px solid #BD2121; 
+}
+
+.form-link-password {
+    color:#2156BD;
+    font-size: 1.125rem;
+    text-align: right;
+}
+
+.form-link-password:hover {
+    color: #1C499F;
+}
+
+.form-submit {
+    margin: auto 0 0 0;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    background: #2156BD;
+    border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background: #1C499F;
+}
+
+.form-submit:active {
+    background: #194292;
+}
+
+.form-link {
+    align-self: center;
+    font-size: 1.125rem;
+    color: #989898;
+    text-decoration: none;
+}
+
+.form-link:hover {
+    color: #6a6a6a;
+}
