@@ -3,6 +3,7 @@
 @import url('main.css');
 @import url('footer.css');
 @import url('product.css');
+@import url('account.css');
 
 * {
     text-decoration: none;
@@ -31,6 +32,10 @@ body {
 
 li {
     list-style: none;
+}
+
+button, input {
+    font-family: 'Open Sans';
 }
 
 .container {
