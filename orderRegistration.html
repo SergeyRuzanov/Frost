@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/OrderRegistration.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a class="logo-link" href="index.html"><img class="logo-img" src="images/Frost_logo.svg"
+                        alt="Frost"></a>
+            </div>
+            <ul class="cities">
+                <li class="cities-text">г. Нур-Султан</li>
+                <li class="cities-text">г. Алматы</li>
+            </ul>
+            <ul class="numbers">
+                <li class="numbers-text"><a class="numbers-link" href="tel:+77075115311">+7 707 511 53 11</a></li>
+                <li class="numbers-text"><a class="numbers-link" href="tel:+77078098217">+7 707 809 82 17</a></li>
+            </ul>
+            <div class="search">
+                <input class="search-input" type="search" name="#" placeholder="Поиск по каталогу...">
+                <input class="search-button" type="button" name="#">
+            </div>
+            <ul class="login">
+                <li class="signIn login-text"><a class="login-link" href="#">Вход в личный кабинет</a></li>
+                <li class="signUp login-text"><a class="login-link" href="#">Зарегистрироваться</a></li>
+            </ul>
+            <div class="cart">
+                <a class="cart-link" href="#">
+                    <div class="cart-number">2</div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="orderRegistration-head">
+                Оформление заказа
+                <div class="orderRegistration-head-buttons">
+
+                    <button class="buttons-button buttons-button-this" ><span style="z-index: 7;">Корзина</span><div class="button-border" style="z-index: 6;"></div></button>
+
+                    <button class="buttons-button" ><span style="z-index: 5; margin-left: 23px;">Контактные данные</span><div class="button-border"  style="z-index: 4;"></div></button>
+
+                    <button class="buttons-button" ><span style="z-index: 3; margin-left: 22px;">Доставка</span><div class="button-border" style="z-index: 2;"></div></button>
+
+                    <button class="buttons-button" style="z-index: 1;"><span>Завершение</span></button>
+
+                </div>
+            </div>
+
+            <div class="orderRegistration-cart">
+                <div class="cart-main">
+                    <div class="orderRegistration-head-section">
+                        Корзина
+                    </div>
+                    <table class="cart-table">
+                        <tr>
+                            <th class="cart-table-name-head">Наименование товара</th>
+                            <th class="cart-table-num-head">Количество</th>
+                            <th class="cart-table-price-head">Цена</th>
+                        </tr>
+                        <tr>
+                            <td class="cart-table-name">
+                                Компрессор кондиционера Hyundai Tucson, Kia Sportage 97701-2E300FD; 0935-03se; Kia
+                                Sportage 97701-2E300FD; 0935-02
+                                <div>
+                                    <div class="name-partNumber">
+                                        Артикул: AC97701
+                                    </div>
+                                    <button class="name-delProd">
+                                        Удалить из корзины
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="cart-table-num">
+                                <button class="num-minus">-</button>
+                                <div class="num-number">1</div>
+                                <button class="num-plus">+</button>
+                            </td>
+                            <td class="cart-table-price">110 999 тг</td>
+                        </tr>
+                        <tr>
+                            <td class="cart-table-name">
+                                Компрессор кондиционера Hyundai Tucson, Kia Sportage 97701-2E300FD; 0935-03se; Kia
+                                Sportage 97701-2E300FD; 0935-02
+                                <div>
+                                    <div class="name-partNumber">
+                                        Артикул: AC97701
+                                    </div>
+                                    <button class="name-delProd">
+                                        Удалить из корзины
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="cart-table-num">
+                                <button class="num-minus">-</button>
+                                <div class="num-number">1</div>
+                                <button class="num-plus">+</button>
+                            </td>
+                            <td class="cart-table-price">110 999 тг</td>
+                        </tr>
+                    </table>
+                    <div class="cart-footer">
+                        <label>Способ оплаты
+                            <select name="pay">
+                                <option>Оплата при получении</option>
+                            </select>
+                        </label>
+                        <div class="cart-totalPrice">
+                            Итого к оплате:
+                            <span class="totalPrice-num">206 998 тг</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="orderRegistration-button">Оформить заказ</button>
+            </div>
+
+
+            <div class="orderRegistration-contact">
+                <div class="contact-main">
+                    <div class="orderRegistration-head-section">
+                        Контактные данные
+                    </div>
+                    <form action="GET" class="contact-form">
+                        <div class="orderRegistration-form-left">
+                            <label>Фамилия<input type="text" name="" id=""></label>
+                            <label>Имя<input type="text" name="" id=""></label>
+                            <label>Отчество<input type="text" name="" id=""></label>
+                            <label>Телефон<input type="tel" name="" id="" placeholder="+7 (___) ___ __ __"></label>
+                        </div>
+                        <div class="orderRegistration-form-right">
+                            <label>E-mail<input type="email" name="" id=""></label>
+                            <label disabled>Пароль<input type="password" name="" id="" disabled></label>
+                            <label disabled>Повторите пароль<input type="password" name="" id="" disabled></label>
+                        </div>
+                    </form>
+                </div>
+                <button class="orderRegistration-button" form="#">Подтвердить</button>
+            </div>
+
+
+            <div class="orderRegistration-delivery">
+                <div class="delivery-main">
+                    <div class="orderRegistration-head-section">
+                        Доставка
+                    </div>
+                    <form action="GET" class="delivery-form">
+                        <div class="orderRegistration-form-left">
+                            <label>Область
+                                <select>
+                                    <option value="">Акмолинская область</option>
+                                </select>
+                            </label>
+                            <label>Город или поселок<input type="text" name="" id=""></label>
+                        </div>
+                        <div class="orderRegistration-form-right">
+                            <label>Улица<input type="text" name="" id=""></label>
+                            <div class="form-row">
+                                <label>Дом<input type="text" name="" id=""></label>
+                                <label>Квартира<input type="text" name="" id=""></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <button class="orderRegistration-button" form="#">Оформить заказ</button>
+            </div>
+
+
+            <div class="orderRegistration-final">
+                <div class="final-main">
+                    <div class="orderRegistration-head-section">
+                        Заказ успешно создан
+                    </div>
+                    <div class="final-main-row">
+                        <div class="final-text">
+                            Заказ №100001 был создан. Вы можете просмотреть список всех ваших заказов в личном кабинете.
+                        </div>
+                        <a href="myOrder.html" class="final-link">Перейти в личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="socials">
+                <li class="socials-item">
+                    <a class="socials-link" href="https://www.instagram.com/autokondicioneriastana" target="_blank">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" stroke="#9A9A9A">
+                            <rect x="1.5" y="1.5" width="30" height="30" rx="8.5" stroke-width="3" />
+                            <circle cx="16.4999" cy="16.5001" r="6.51429" stroke-width="3" />
+                            <circle r="1.88571" transform="matrix(-1 0 0 1 25.4571 7.54294)" fill="#9A9A9A" />
+                        </svg>
+                        <p class="socials-text">autokondicioneriastana</p>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-link socials-link-mail" href="mailto: frostautofrost@gmail.com">
+                        <svg width="35" height="24" viewBox="0 0 35 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 0V21.3333C0 22.4379 0.89543 23.3333 2 23.3333H33C34.1046 23.3333 35 22.4379 35 21.3333V0H0ZM7.20416 3L17.2227 9.67899C17.3906 9.79096 17.6094 9.79096 17.7774 9.67899L27.7958 3H7.20416ZM32 3.80278L19.4415 12.1751C18.2658 12.9589 16.7342 12.9589 15.5586 12.1751L3 3.80278V20.3333H32V3.80278Z"
+                                fill="#9A9A9A" />
+                        </svg>
+                        <p class="socials-text">frostautofrost@gmail.com</p>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-link" href="tel: +7 707 511 53 11">
+                        <svg width="41" height="46" viewBox="0 0 41 46" fill="none" stroke="#9A9A9A">
+                            <path
+                                d="M18.2104 31.2781L18.2104 31.2781L18.2037 31.2713L11.7552 24.8236C9.15846 22.1716 8.54746 19.5208 8.72561 17.2299C8.90941 14.8665 9.94689 12.7752 10.8245 11.4035C11.1339 10.9201 11.4145 10.5398 11.614 10.2847C11.7136 10.1573 11.7925 10.0618 11.844 10.0009C11.8635 9.9778 11.8791 9.95972 11.8903 9.94679L13.8648 7.9723C14.2979 7.53916 14.9738 7.55197 15.3745 7.95271L19.3472 11.9254C19.7479 12.3261 19.7607 13.002 19.3276 13.4351L17.3796 15.3831C17.3652 15.3949 17.3497 15.4079 17.3331 15.4219C17.2573 15.4861 17.1574 15.5753 17.046 15.6872C16.8305 15.9036 16.5362 16.2403 16.3009 16.6774C16.0645 17.1169 15.8529 17.725 15.9164 18.4391C15.9822 19.1791 16.3279 19.8585 16.9053 20.4358L22.8272 26.3578C23.299 26.8296 23.8572 27.113 24.4511 27.2126C25.5029 27.389 26.4056 26.9535 26.8969 26.6549C27.1679 26.4901 27.3888 26.3209 27.5422 26.1933C27.62 26.1286 27.6832 26.0724 27.7297 26.0295C27.7531 26.008 27.7724 25.9897 27.7875 25.9751L27.807 25.9562L27.8143 25.949L27.8174 25.9459L27.8188 25.9446L27.8194 25.9439C27.8197 25.9436 27.82 25.9433 26.7594 24.8826L27.82 25.9433L29.8279 23.9354C30.261 23.5023 30.9369 23.5151 31.3377 23.9158L35.3103 27.8885C35.7111 28.2892 35.7239 28.9651 35.2907 29.3982L33.3163 31.3727C33.3034 31.3839 33.2853 31.3994 33.2623 31.4189C33.2014 31.4703 33.1059 31.5492 32.9785 31.6487C32.7234 31.8482 32.3431 32.1286 31.8596 32.4378C30.4787 33.3206 28.3687 34.3643 25.985 34.536C23.6741 34.7024 20.9937 34.062 18.3136 31.382C18.279 31.3474 18.2446 31.3128 18.2104 31.2781Z"
+                                stroke-width="3" />
+                        </svg>
+                        <div class="socials-text">
+                            <p class="socials-text phone-city">г. Нур-Султан</p>
+                            <p class="socials-text">+7 707 511 53 11</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-link" href="tel: +7 707 809 82 17">
+                        <svg width="41" height="46" viewBox="0 0 41 46" fill="none" stroke="#9A9A9A">
+                            <path
+                                d="M18.2104 31.2781L18.2104 31.2781L18.2037 31.2713L11.7552 24.8236C9.15846 22.1716 8.54746 19.5208 8.72561 17.2299C8.90941 14.8665 9.94689 12.7752 10.8245 11.4035C11.1339 10.9201 11.4145 10.5398 11.614 10.2847C11.7136 10.1573 11.7925 10.0618 11.844 10.0009C11.8635 9.9778 11.8791 9.95972 11.8903 9.94679L13.8648 7.9723C14.2979 7.53916 14.9738 7.55197 15.3745 7.95271L19.3472 11.9254C19.7479 12.3261 19.7607 13.002 19.3276 13.4351L17.3796 15.3831C17.3652 15.3949 17.3497 15.4079 17.3331 15.4219C17.2573 15.4861 17.1574 15.5753 17.046 15.6872C16.8305 15.9036 16.5362 16.2403 16.3009 16.6774C16.0645 17.1169 15.8529 17.725 15.9164 18.4391C15.9822 19.1791 16.3279 19.8585 16.9053 20.4358L22.8272 26.3578C23.299 26.8296 23.8572 27.113 24.4511 27.2126C25.5029 27.389 26.4056 26.9535 26.8969 26.6549C27.1679 26.4901 27.3888 26.3209 27.5422 26.1933C27.62 26.1286 27.6832 26.0724 27.7297 26.0295C27.7531 26.008 27.7724 25.9897 27.7875 25.9751L27.807 25.9562L27.8143 25.949L27.8174 25.9459L27.8188 25.9446L27.8194 25.9439C27.8197 25.9436 27.82 25.9433 26.7594 24.8826L27.82 25.9433L29.8279 23.9354C30.261 23.5023 30.9369 23.5151 31.3377 23.9158L35.3103 27.8885C35.7111 28.2892 35.7239 28.9651 35.2907 29.3982L33.3163 31.3727C33.3034 31.3839 33.2853 31.3994 33.2623 31.4189C33.2014 31.4703 33.1059 31.5492 32.9785 31.6487C32.7234 31.8482 32.3431 32.1286 31.8596 32.4378C30.4787 33.3206 28.3687 34.3643 25.985 34.536C23.6741 34.7024 20.9937 34.062 18.3136 31.382C18.279 31.3474 18.2446 31.3128 18.2104 31.2781Z"
+                                stroke-width="3" />
+                        </svg>
+                        <div class="socials-text">
+                            <p class="socials-text phone-city">г. Алматы</p>
+                            <p class="socials-text">+7 707 809 82 17</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
